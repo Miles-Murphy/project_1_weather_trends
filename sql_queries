@@ -1,0 +1,19 @@
+SQL Queries to collect .csv data for analysis
+
+1.
+    SELECT city, country, year, avg_temp
+    FROM city_data
+    WHERE city LIKE 'R%' AND country = 'United States'
+    ORDER BY 3
+
+2.
+    SELECT year, avg_temp
+    FROM global_data
+
+3.
+    SELECT g.year as "Year", g.avg_temp as "Global Avg Temperatures", c.avg_temp as "Raleigh Avg Temperatures"
+    FROM global_data g
+    JOIN city_data c
+    ON c.year = g.year
+    WHERE city = 'Raleigh'
+    ORDER BY g.year
