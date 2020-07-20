@@ -17,3 +17,14 @@ SQL Queries to collect .csv data for analysis
     ON c.year = g.year
     WHERE city = 'Raleigh'
     ORDER BY g.year
+
+4.
+    SELECT g.year as "Year", g.avg_temp as "Global Avg Temperatures"
+    FROM global_data g
+    ORDER BY g.year
+
+5.
+    SELECT c.avg_temp as "Raleigh Avg Temperatures", c.year as "Year"
+    FROM city_data c
+    WHERE city = 'Raleigh'
+    ORDER BY c.year
