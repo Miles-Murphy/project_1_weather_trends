@@ -28,3 +28,27 @@ SQL Queries to collect .csv data for analysis
     FROM city_data c
     WHERE city = 'Raleigh'
     ORDER BY c.year
+
+6.
+    SELECT c.avg_temp as "Tokyo Avg Temperatures", c.year as "Year"
+    FROM city_data c
+    WHERE city = 'Tokyo'
+    ORDER BY c.year
+
+7.
+    SELECT c.avg_temp as "Dublin Avg Temperatures", c.year as "Year"
+    FROM city_data c
+    WHERE city = 'Dublin'
+    ORDER BY c.year
+
+8.
+    SELECT c.avg_temp as "Rio de Janeiro Avg Temperatures", c.year as "Year"
+    FROM city_data c
+    WHERE city LIKE "rio%'
+    ORDER BY c.year
+
+9.
+    SELECT c.avg_temp as "Edinburgh Avg Temperatures", c.year as "Year"
+    FROM city_data c
+    WHERE city = 'Edinburgh'
+    ORDER BY c.year
