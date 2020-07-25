@@ -44,7 +44,7 @@ SQL Queries to collect .csv data for analysis
 8.
     SELECT c.avg_temp as "Rio de Janeiro Avg Temperatures", c.year as "Year"
     FROM city_data c
-    WHERE city LIKE "rio%'
+    WHERE city LIKE 'rio%'
     ORDER BY c.year
 
 9.
